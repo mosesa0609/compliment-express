@@ -1,0 +1,28 @@
+{
+  "name": "compliment-express",
+  "version": "1.0.0",
+  "description": "## Mission…",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mosesa0609/compliment-express.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mosesa0609/compliment-express/issues"
+  },
+  "homepage": "https://github.com/mosesa0609/compliment-express#readme",
+  "dependencies": {
+    "body-parser": "^1.18.2",
+    "express": "^4.16.2",
+    "hbs": "^4.0.1",
+    "mongoose": "^4.13.7",
+    "random-js": "^1.0.8",
+    "randomcolor": "^0.5.3",
+    "shuffle-array": "^1.0.1"
+  }
+}
