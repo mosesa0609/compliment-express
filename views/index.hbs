@@ -1,8 +1,8 @@
 <style>
-      body {
+    body {
         background-color: {{color}};
       }
-      h1 {
+    h1 {
         color: white;
         position: absolute;
         top: 50%;
@@ -11,7 +11,7 @@
         font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
         font-size: 25px;
       }
-      h2 a {
+    h2 a {
         position: absolute;
         left: 30%;
         transform: translate(-50%, -50%);
@@ -20,7 +20,16 @@
         text-decoration: none;
         color:aliceblue;
       }
-    </style>
-    <h2><a href='/'>Emergency Compliment</a></h2>
-    
-    <h1>{{name}}, {{compliment}}</h1>
+    h4 a {
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        font-size: 20px;
+        text-decoration: none;
+    }
+</style>
+<h2><a href='/'>Emergency Compliment</a></h2>
+<h1> Hey {{name}}! {{complimentsList}}</h1>
+<form action="/compliments/{{compliment.compliment}}?_method=put" method="post">
+    <input class='inputTitle' type="text" name='Compliment[compliment]' placeholder="Add a compliment" value="{{compliment.compliment}}">
+    <input class='submit' type="submit" value='Post'>
+</form>
+<h4><a href="/compliments">See our latest Compliments</a></h3>
